@@ -18,7 +18,6 @@
 		A4B7383C2692F7B6001C5532 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7383B2692F7B6001C5532 /* CoreLocation.framework */; };
 		A4B7383E2692F7C0001C5532 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7383D2692F7C0001C5532 /* CoreGraphics.framework */; };
 		A4B738402692F7CB001C5532 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7383F2692F7CB001C5532 /* MobileCoreServices.framework */; };
-		A4B738432692F81F001C5532 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B738352692F63C001C5532 /* libCordova.a */; };
 		A4B738552692FC74001C5532 /* CBPeripheral+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7384B2692FC73001C5532 /* CBPeripheral+Extensions.m */; };
 		A4B738562692FC74001C5532 /* BLECommandContext.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7384C2692FC73001C5532 /* BLECommandContext.m */; };
 		A4B738572692FC74001C5532 /* BLECentralPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7384D2692FC73001C5532 /* BLECentralPlugin.m */; };
@@ -28,26 +27,27 @@
 		A4B73860269306BA001C5532 /* www in Resources */ = {isa = PBXBuildFile; fileRef = A4B7385E269306B9001C5532 /* www */; };
 		A4B738622693080D001C5532 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = A4B738612693080D001C5532 /* config.xml */; };
 		A4B7386626930BEC001C5532 /* CDVSmartgarden.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7386526930BEC001C5532 /* CDVSmartgarden.m */; };
+		A4B7388226934F0A001C5532 /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7387D26934EEF001C5532 /* libCordova.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A4B738342692F63C001C5532 /* PBXContainerItemProxy */ = {
+		A4B7387C26934EEF001C5532 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */;
+			containerPortal = A4B7387726934EEF001C5532 /* CordovaLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 68A32D7114102E1C006B237C;
 			remoteInfo = CordovaLib;
 		};
-		A4B738362692F63C001C5532 /* PBXContainerItemProxy */ = {
+		A4B7387E26934EEF001C5532 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */;
+			containerPortal = A4B7387726934EEF001C5532 /* CordovaLib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = C0C01EB21E3911D50056E6CB;
 			remoteInfo = Cordova;
 		};
-		A4B738412692F7F2001C5532 /* PBXContainerItemProxy */ = {
+		A4B7388026934F04001C5532 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */;
+			containerPortal = A4B7387726934EEF001C5532 /* CordovaLib.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = D2AAC07D0554694100DB518D;
 			remoteInfo = CordovaLib;
@@ -67,7 +67,6 @@
 		A49626052692F15B005D6885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A49626072692F15B005D6885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49626082692F15B005D6885 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = "../../smartgarden-app-test/platforms/ios/CordovaLib/CordovaLib.xcodeproj"; sourceTree = "<group>"; };
 		A4B738392692F7AB001C5532 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		A4B7383B2692F7B6001C5532 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A4B7383D2692F7C0001C5532 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +85,7 @@
 		A4B738612693080D001C5532 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		A4B7386426930BC2001C5532 /* CDVSmartgarden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDVSmartgarden.h; sourceTree = "<group>"; };
 		A4B7386526930BEC001C5532 /* CDVSmartgarden.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDVSmartgarden.m; sourceTree = "<group>"; };
+		A4B7387726934EEF001C5532 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4B738432692F81F001C5532 /* libCordova.a in Frameworks */,
+				A4B7388226934F0A001C5532 /* libCordova.a in Frameworks */,
 				A4B7383A2692F7AB001C5532 /* AssetsLibrary.framework in Frameworks */,
 				A4B7385C2692FD0B001C5532 /* CoreBluetooth.framework in Frameworks */,
 				A4B7383C2692F7B6001C5532 /* CoreLocation.framework in Frameworks */,
@@ -108,9 +108,9 @@
 		A49625EA2692F151005D6885 = {
 			isa = PBXGroup;
 			children = (
+				A4B7387726934EEF001C5532 /* CordovaLib.xcodeproj */,
 				A4B738612693080D001C5532 /* config.xml */,
 				A4B7385E269306B9001C5532 /* www */,
-				A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */,
 				A49625F52692F152005D6885 /* Smartgarden */,
 				A49625F42692F152005D6885 /* Products */,
 				A4B738482692FC73001C5532 /* Plugins */,
@@ -142,15 +142,6 @@
 				A49626082692F15B005D6885 /* main.m */,
 			);
 			path = Smartgarden;
-			sourceTree = "<group>";
-		};
-		A4B738302692F63C001C5532 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A4B738352692F63C001C5532 /* libCordova.a */,
-				A4B738372692F63C001C5532 /* Cordova.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		A4B738382692F7AA001C5532 /* Frameworks */ = {
@@ -215,6 +206,15 @@
 			path = "cordova-plugin-smartgarden";
 			sourceTree = "<group>";
 		};
+		A4B7387826934EEF001C5532 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7387D26934EEF001C5532 /* libCordova.a */,
+				A4B7387F26934EEF001C5532 /* Cordova.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,7 +229,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				A4B738422692F7F2001C5532 /* PBXTargetDependency */,
+				A4B7388126934F04001C5532 /* PBXTargetDependency */,
 			);
 			name = Smartgarden;
 			productName = Smartgarden;
@@ -262,8 +262,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A4B738302692F63C001C5532 /* Products */;
-					ProjectRef = A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */;
+					ProductGroup = A4B7387826934EEF001C5532 /* Products */;
+					ProjectRef = A4B7387726934EEF001C5532 /* CordovaLib.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -274,18 +274,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A4B738352692F63C001C5532 /* libCordova.a */ = {
+		A4B7387D26934EEF001C5532 /* libCordova.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libCordova.a;
-			remoteRef = A4B738342692F63C001C5532 /* PBXContainerItemProxy */;
+			remoteRef = A4B7387C26934EEF001C5532 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A4B738372692F63C001C5532 /* Cordova.framework */ = {
+		A4B7387F26934EEF001C5532 /* Cordova.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Cordova.framework;
-			remoteRef = A4B738362692F63C001C5532 /* PBXContainerItemProxy */;
+			remoteRef = A4B7387E26934EEF001C5532 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -326,10 +326,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A4B738422692F7F2001C5532 /* PBXTargetDependency */ = {
+		A4B7388126934F04001C5532 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = CordovaLib;
-			targetProxy = A4B738412692F7F2001C5532 /* PBXContainerItemProxy */;
+			targetProxy = A4B7388026934F04001C5532 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
