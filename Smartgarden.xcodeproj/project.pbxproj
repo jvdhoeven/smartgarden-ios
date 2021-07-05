@@ -80,7 +80,6 @@
 		A4B738522692FC73001C5532 /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDVLocation.h; sourceTree = "<group>"; };
 		A4B738532692FC73001C5532 /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVLocation.m; sourceTree = "<group>"; };
 		A4B738542692FC73001C5532 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		A4B7385A2692FCBF001C5532 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = "/Users/jvdhoeven/Documents/projects/smartgarden-ios/Smartgarden/www"; sourceTree = "<absolute>"; };
 		A4B7385B2692FD0A001C5532 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -105,7 +104,6 @@
 			isa = PBXGroup;
 			children = (
 				A4B7382D2692F5E2001C5532 /* config.xml */,
-				A4B7385A2692FCBF001C5532 /* www */,
 				A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */,
 				A49625F52692F152005D6885 /* Smartgarden */,
 				A49625F42692F152005D6885 /* Products */,
