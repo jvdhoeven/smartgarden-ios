@@ -21,8 +21,7 @@
     // Do any additional setup after loading the view.
     
     CDVViewController* viewController = [CDVViewController new];
-    viewController.view.frame = CGRectMake(0, 0, 320, 480);
-    viewController.wwwFolderName = @"www";
+    //viewController.view.frame = CGRectMake(0, 0, 320, 480);
     
     [_myView addSubview:viewController.view];
 }

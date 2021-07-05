@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="de.joergv.smartgarden" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <feature name="CDVWebViewEngine">
         <param name="ios-package" value="CDVWebViewEngine" />
     </feature>
@@ -27,6 +27,9 @@
     </feature>
     <feature name="BLE">
         <param name="ios-package" onload="true" value="BLECentralPlugin" />
+    </feature>
+    <feature name="Smartgarden">
+        <param name="ios-package" onload="true" value="CDVSmartgarden" />
     </feature>
     <feature name="Geolocation">
         <param name="ios-package" value="CDVLocation" />
@@ -78,3 +81,4 @@
     <preference name="scheme" value="app" />
     <preference name="hostname" value="localhost" />
 </widget>
+

@@ -14,7 +14,6 @@
 		A49626032692F15B005D6885 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A49626022692F15B005D6885 /* Assets.xcassets */; };
 		A49626062692F15B005D6885 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A49626042692F15B005D6885 /* LaunchScreen.storyboard */; };
 		A49626092692F15B005D6885 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A49626082692F15B005D6885 /* main.m */; };
-		A4B7382E2692F5E3001C5532 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = A4B7382D2692F5E2001C5532 /* config.xml */; };
 		A4B7383A2692F7AB001C5532 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B738392692F7AB001C5532 /* AssetsLibrary.framework */; };
 		A4B7383C2692F7B6001C5532 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7383B2692F7B6001C5532 /* CoreLocation.framework */; };
 		A4B7383E2692F7C0001C5532 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7383D2692F7C0001C5532 /* CoreGraphics.framework */; };
@@ -26,6 +25,9 @@
 		A4B738582692FC74001C5532 /* CDVLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B738532692FC73001C5532 /* CDVLocation.m */; };
 		A4B738592692FC74001C5532 /* README in Resources */ = {isa = PBXBuildFile; fileRef = A4B738542692FC73001C5532 /* README */; };
 		A4B7385C2692FD0B001C5532 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4B7385B2692FD0A001C5532 /* CoreBluetooth.framework */; };
+		A4B73860269306BA001C5532 /* www in Resources */ = {isa = PBXBuildFile; fileRef = A4B7385E269306B9001C5532 /* www */; };
+		A4B738622693080D001C5532 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = A4B738612693080D001C5532 /* config.xml */; };
+		A4B7386626930BEC001C5532 /* CDVSmartgarden.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B7386526930BEC001C5532 /* CDVSmartgarden.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +67,6 @@
 		A49626052692F15B005D6885 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A49626072692F15B005D6885 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A49626082692F15B005D6885 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A4B7382D2692F5E2001C5532 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
 		A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CordovaLib.xcodeproj; path = "../../smartgarden-app-test/platforms/ios/CordovaLib/CordovaLib.xcodeproj"; sourceTree = "<group>"; };
 		A4B738392692F7AB001C5532 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		A4B7383B2692F7B6001C5532 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -81,6 +82,10 @@
 		A4B738532692FC73001C5532 /* CDVLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDVLocation.m; sourceTree = "<group>"; };
 		A4B738542692FC73001C5532 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		A4B7385B2692FD0A001C5532 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A4B7385E269306B9001C5532 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		A4B738612693080D001C5532 /* config.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		A4B7386426930BC2001C5532 /* CDVSmartgarden.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CDVSmartgarden.h; sourceTree = "<group>"; };
+		A4B7386526930BEC001C5532 /* CDVSmartgarden.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CDVSmartgarden.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +108,8 @@
 		A49625EA2692F151005D6885 = {
 			isa = PBXGroup;
 			children = (
-				A4B7382D2692F5E2001C5532 /* config.xml */,
+				A4B738612693080D001C5532 /* config.xml */,
+				A4B7385E269306B9001C5532 /* www */,
 				A4B7382F2692F63C001C5532 /* CordovaLib.xcodeproj */,
 				A49625F52692F152005D6885 /* Smartgarden */,
 				A49625F42692F152005D6885 /* Products */,
@@ -162,6 +168,7 @@
 		A4B738482692FC73001C5532 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				A4B7386326930B6A001C5532 /* cordova-plugin-smartgarden */,
 				A4B738492692FC73001C5532 /* cordova-plugin-ble-central */,
 				A4B738512692FC73001C5532 /* cordova-plugin-geolocation */,
 				A4B738542692FC73001C5532 /* README */,
@@ -197,6 +204,15 @@
 				A4B738532692FC73001C5532 /* CDVLocation.m */,
 			);
 			path = "cordova-plugin-geolocation";
+			sourceTree = "<group>";
+		};
+		A4B7386326930B6A001C5532 /* cordova-plugin-smartgarden */ = {
+			isa = PBXGroup;
+			children = (
+				A4B7386426930BC2001C5532 /* CDVSmartgarden.h */,
+				A4B7386526930BEC001C5532 /* CDVSmartgarden.m */,
+			);
+			path = "cordova-plugin-smartgarden";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,11 +295,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B73860269306BA001C5532 /* www in Resources */,
 				A4B738592692FC74001C5532 /* README in Resources */,
 				A49626062692F15B005D6885 /* LaunchScreen.storyboard in Resources */,
+				A4B738622693080D001C5532 /* config.xml in Resources */,
 				A49626032692F15B005D6885 /* Assets.xcassets in Resources */,
 				A49626012692F152005D6885 /* Main.storyboard in Resources */,
-				A4B7382E2692F5E3001C5532 /* config.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +319,7 @@
 				A49625FB2692F152005D6885 /* SceneDelegate.m in Sources */,
 				A4B738582692FC74001C5532 /* CDVLocation.m in Sources */,
 				A4B738562692FC74001C5532 /* BLECommandContext.m in Sources */,
+				A4B7386626930BEC001C5532 /* CDVSmartgarden.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,7 +484,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = de.joergv.Smartgarden;
+				PRODUCT_BUNDLE_IDENTIFIER = de.joergv.Smartgarden.wbh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -491,7 +509,7 @@
 					"@executable_path/Frameworks",
 				);
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = de.joergv.Smartgarden;
+				PRODUCT_BUNDLE_IDENTIFIER = de.joergv.Smartgarden.wbh;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
