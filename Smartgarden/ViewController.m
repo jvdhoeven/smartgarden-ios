@@ -10,20 +10,23 @@
 #import <WebKit/WebKit.h>
 
 @interface ViewController ()
-@property (strong, nonatomic) IBOutlet UIView *myView;
 
 @end
 
 @implementation ViewController
 
+@synthesize topNavigtion;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
     CDVViewController* viewController = [CDVViewController new];
     //viewController.view.frame = CGRectMake(0, 0, 320, 480);
     
-    [_myView addSubview:viewController.view];
+    // set CDVViewController as childController to be able to access
+    // ViewController over parentViewControler from CordovaPlugin
+    [self addChildViewController:viewController];
+    
+    [_theView addSubview:viewController.view];
 }
 
 
