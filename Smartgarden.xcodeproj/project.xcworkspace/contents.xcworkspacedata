@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/jvdhoeven/Documents/projects/smartgarden-ios/Smartgarden/www">
+   </FileRef>
+   <FileRef
       location = "self:">
    </FileRef>
 </Workspace>
