@@ -3,6 +3,7 @@
     <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,46 +18,84 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="N9z-rW-Amy">
-                                <rect key="frame" x="0.0" y="69" width="414" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="689"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <viewLayoutGuide key="safeArea" id="MAM-zn-oaC"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <variation key="heightClass=regular" insetsLayoutMarginsFromSafeArea="NO"/>
                             </view>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5te-X8-dNO">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5te-X8-dNO">
                                 <rect key="frame" x="0.0" y="692" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
-                                    <barButtonItem title="Item" id="omB-Dn-gT1"/>
+                                    <barButtonItem title="Item" image="link" catalog="system" id="omB-Dn-gT1">
+                                        <connections>
+                                            <action selector="select:" destination="BYZ-38-t0r" id="dVX-aM-xnK"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="v3z-nR-Qee"/>
+                                    <barButtonItem title="Item" image="house" catalog="system" id="12D-CA-rwF">
+                                        <connections>
+                                            <action selector="dashboard:" destination="BYZ-38-t0r" id="927-cE-gOf"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="yW5-Do-fJ0"/>
+                                    <barButtonItem title="Item" image="drop" catalog="system" id="4oI-Dm-Ip1">
+                                        <connections>
+                                            <action selector="watering:" destination="BYZ-38-t0r" id="PMA-8T-7JG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="90h-Ex-Uoi"/>
+                                    <barButtonItem title="Item" image="gearshape" catalog="system" id="LeK-nQ-Lbc">
+                                        <connections>
+                                            <action selector="settings:" destination="BYZ-38-t0r" id="qzB-FP-WIn"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
+                                <color key="tintColor" name="primaryDark"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FiH-pY-08d"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
-                    <navigationItem key="navigationItem" id="7Sn-QL-b07">
-                        <barButtonItem key="leftBarButtonItem" title="Item" image="chevron.left" catalog="system" id="uGb-vC-ZNR"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="7Sn-QL-b07"/>
                     <connections>
+                        <outlet property="bottomNavigation" destination="5te-X8-dNO" id="bOK-lP-Fug"/>
+                        <outlet property="dashboard" destination="12D-CA-rwF" id="Jtf-Dk-PZr"/>
+                        <outlet property="select" destination="omB-Dn-gT1" id="RvE-kp-kIR"/>
+                        <outlet property="settings" destination="LeK-nQ-Lbc" id="Aid-0c-ePD"/>
                         <outlet property="theView" destination="N9z-rW-Amy" id="Bcs-9H-4Jf"/>
                         <outlet property="topNavigtion" destination="7Sn-QL-b07" id="iaq-Bw-pw7"/>
+                        <outlet property="watering" destination="4oI-Dm-Ip1" id="7UL-kF-im6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="79.6875"/>
+            <point key="canvasLocation" x="928.98550724637687" y="79.076086956521749"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EuG-Ux-lUZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KGI-8j-pTw" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" toolbarHidden="NO" id="KGI-8j-pTw" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="chevron.backward" catalog="system" id="Dhc-dz-0qo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Dhc-dz-0qo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="primary"/>
+                        <color key="tintColor" name="Color"/>
+                        <color key="barTintColor" name="primary"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Qra-7k-Ain">
+                        <rect key="frame" x="0.0" y="692" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wQM-Ib-M3F"/>
                     </connections>
@@ -67,8 +106,19 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chevron.backward" catalog="system" width="96" height="128"/>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
+        <image name="drop" catalog="system" width="101" height="128"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="link" catalog="system" width="128" height="122"/>
+        <namedColor name="Color">
+            <color red="0.25098039215686274" green="0.42352941176470588" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.56470588235294117" green="0.93333333333333335" blue="0.56470588235294117" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primaryDark">
+            <color red="0.25098039215686274" green="0.42352941176470588" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
