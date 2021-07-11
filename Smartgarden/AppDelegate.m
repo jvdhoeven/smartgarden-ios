@@ -6,16 +6,27 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
-
+@synthesize window;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    //self.viewController = self.window.rootViewController;
+    CGRect windowFrame = UIScreen.mainScreen.bounds;
+    self.window = [[UIWindow alloc] initWithFrame:windowFrame];
+    
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    /*ViewController *viewController;
+    viewController = [storyboard instantiateViewControllerWithIdentifier:@"Testing"];
+    
+    self.window.rootViewController = viewController.viewController;*/
+    
     return YES;
 }
 

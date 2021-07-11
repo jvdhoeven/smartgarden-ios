@@ -8,6 +8,7 @@
 #import "ViewController.h"
 #import <Cordova/CDVViewController.h>
 #import <WebKit/WebKit.h>
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -30,17 +31,24 @@
 
 @synthesize topNavigtion;
 @synthesize bottomNavigation;
+@synthesize viewController;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    
     self.viewController = [CDVViewController new];
+    
+    AppDelegate *appDelegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    appDelegate.window.rootViewController = self;
     
     // set CDVViewController as childController to be able to access
     // ViewController over parentViewControler from CordovaPlugin
-    [self addChildViewController:_viewController];
+    [self addChildViewController:viewController];
     [bottomNavigation setHidden:true];
     
-    [_theView addSubview:_viewController.view];
+    [_theView addSubview:viewController.view];
 }
 
 - (void)resetButtonTints {
@@ -75,24 +83,24 @@
 - (IBAction)settings:(id)sender {
     [self resetButtonTints];
     [self setBottomButtonActive:@"settings"];
-    [_viewController.webViewEngine evaluateJavaScript:@"App.goTo('settings');" completionHandler:nil ];
+    [viewController.webViewEngine evaluateJavaScript:@"App.goTo('settings');" completionHandler:nil ];
 }
 
 - (IBAction)watering:(id)sender {
     [self resetButtonTints];
     [self setBottomButtonActive:@"watering"];
-    [_viewController.webViewEngine evaluateJavaScript:@"App.goTo('watering');" completionHandler:nil ];
+    [viewController.webViewEngine evaluateJavaScript:@"App.goTo('watering');" completionHandler:nil ];
 }
 
 - (IBAction)dashboard:(id)sender {
     [self resetButtonTints];
     [self setBottomButtonActive:@"dashboard"];
-    [_viewController.webViewEngine evaluateJavaScript:@"App.goTo('dashboard');" completionHandler:nil ];
+    [viewController.webViewEngine evaluateJavaScript:@"App.goTo('dashboard');" completionHandler:nil ];
 }
 
 - (IBAction)select:(id)sender {
     [self resetButtonTints];
     [self setBottomButtonActive:@"select"];
-    [_viewController.webViewEngine evaluateJavaScript:@"App.goTo('select');" completionHandler:nil ];
+    [viewController.webViewEngine evaluateJavaScript:@"App.goTo('select');" completionHandler:nil ];
 }
 @end
